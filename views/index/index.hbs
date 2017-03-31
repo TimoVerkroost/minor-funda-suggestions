@@ -1,0 +1,81 @@
+<main>
+    <section id="searchContainer">
+        <form id="searchFields" action="/" method="post">
+            <div class="container">
+                <label for="searchField">
+                    <span>Plaats:</span>
+                    <input type="search" value="{{form.plaats}}" name="plaats" id="searchField" autocomplete="off" placeholder="Zoek naar een plaats.." required>
+                </label>
+                <label for="range">
+                    <span>Afstand:</span>
+                    <select name="afstand" id="range">
+                        <option selected="selected" value="0">+0 km</option>
+                        <option value="1">+1 km</option>
+                        <option value="2">+2 km</option>
+                        <option value="5">+5 km</option>
+                        <option value="10">+10 km</option>
+                        <option value="15">+15 km</option>
+                    </select>
+                </label>
+                <label for="buildYear">
+                    <span>Bouwjaar:</span>
+                    <select name="bouwjaar" id="buildYear">
+                        <option selected="selected" value="all">Alle</option>
+                        <option value="1960-1970">1960-1970</option>
+                        <option value="1971-1980">1971-1980</option>
+                        <option value="1981-1990">1981-1990</option>
+                        <option value="1991-2000">1991-2000</option>
+                        <option value="2001-2010">2001-2010</option>
+                    </select>
+                </label>
+                <label for="typeHome">
+                    <span>Soort woning:</span>
+                    <select name="soortWoning" id="typeHome">
+                        <option selected="selected" value="appartement">Appartement</option>
+                        <option value="woonhuis">Woonhuis</option>
+                    </select>
+                </label>
+                <label for="minPrice">
+                    <span>Min prijs:</span>
+                    <select name="minPrijs" id="minPrice">
+                        <option selected="selected" value="0">&euro; 0</option>
+                        <option value="50000">&euro; 50.000</option>
+                        <option value="75000">&euro; 75.000</option>
+                        <option value="100000">&euro; 100.000</option>
+                        <option value="125000">&euro; 125.000</option>
+                        <option value="150000">&euro; 150.000</option>
+                        <option value="175000">&euro; 175.000</option>
+                        <option value="225000">&euro; 225.000</option>
+                        <option value="250000">&euro; 250.000</option>
+                        <option value="275000">&euro; 275.000</option>
+                        <option value="300000">&euro; 300.000</option>
+                    </select>
+                </label>
+                <label for="maxPrice">
+                    <span>Max prijs:</span>
+                    <select name="maxPrijs" id="maxPrice">
+                        <option selected="selected" value="2000000">Geen maximum</option>
+                        <option value="50000">&euro; 50.000</option>
+                        <option value="75000">&euro; 75.000</option>
+                        <option value="100000">&euro; 100.000</option>
+                        <option value="125000">&euro; 125.000</option>
+                        <option value="150000">&euro; 150.000</option>
+                        <option value="175000">&euro; 175.000</option>
+                        <option value="200000">&euro; 200.000</option>
+                        <option value="225000">&euro; 225.000</option>
+                        <option value="250000">&euro; 250.000</option>
+                        <option value="275000">&euro; 275.000</option>
+                        <option value="300000">&euro; 300.000</option>
+                    </select>
+                </label>
+                <label for="submit">
+                    <input type="submit" value="Zoeken" id="submit">
+                </label>
+            </div>
+        </form>
+        <section id="noSearchResults" class="container">
+            <h2>Nog geen huizen gevonden</h2>
+            <p>Er kunnen nog geen suggesties gemaakt worden omdat je nog niet naar woningen heeft gezocht. Zoek eerst naar woningen om suggesties te tonen.</p>
+        </section>
+    </section>
+</main>

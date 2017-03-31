@@ -1,0 +1,17 @@
+{
+ "name": "Funda huizen suggesties",
+ "short_name": "Funda",
+ "description": "Vind huizen die je normaal nooit zelf zal vinden.",
+ "lang": "nl-NL",
+ "start_url": "/?homescreen",
+ "display": "standalone",
+ "theme_color": "#f7a100",
+ "icons": [
+  {
+   "src": "/images/app-icon-funda.png",
+   "sizes": "256x256",
+   "type": "image/png"
+  }
+ ],
+ "background_color": "#FFFFFF"
+}

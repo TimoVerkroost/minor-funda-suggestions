@@ -1,0 +1,45 @@
+<main>
+    <section id="suggesties">
+        <div class="container">
+            <h2>Suggesties</h2>
+            <aside class="sidebar">
+                <h4>Deze suggesties zijn gebaseerd op jouw zoek filters en opgeslagen huizen.</h4>
+                <a href="#" class="button">
+                    <span class="icon-search-white"></span>
+                    <span>Terug naar zoeken</span>
+                </a>
+            </aside>
+            <article id="suggestieResults">
+                {{#each data.Objects}}
+                    <div class="result">
+                        <picture class="mainImage">
+                            <source
+                                    data-srcset="{{#replace "http" "https"}}{{this.FotoSecure}}{{/replace}}"
+                                    media="(max-width: 120px)" />
+                            <source
+                                    data-srcset="{{#replace "http" "https"}}{{this.FotoMedium}}{{/replace}}"
+                                    media="(max-width: 240px)" />
+                            <source
+                                    data-srcset="{{#replace "http" "https"}}{{this.FotoLarge}}{{/replace}}"
+                                    media="(max-width: 580px)" />
+                            <source
+                                    data-srcset="{{#replace "http" "https"}}{{this.FotoLargest}}{{/replace}}" />
+                            <img
+                                    src="/images/dummy-image.jpg"
+                                    data-src="{{#replace "http" "https"}}{{this.FotoLarge}}{{/replace}}"
+                                    class="lazyload"
+                                    alt="{{this.Adres}}" />
+                        </picture>
+                        <div class="infoHome">
+                            <h3><a class="title" href="{{this.URL}}">{{this.Adres}}</a></h3>
+                            <p class="address">{{this.Postcode}} {{this.Woonplaats}}</p>
+                            <strong class="price">{{{this.PrijsGeformatteerdHtml}}}</strong>
+                            <p><span class="area">{{this.Woonoppervlakte}} m&#178;</span> - <span class="rooms">{{this.AantalKamers}} kamers</span></p>
+                        </div>
+                    </div>
+                {{/each}}
+            </article>
+
+        </div>
+    </section>
+</main>

@@ -1,0 +1,33 @@
+<main>
+    <section id="bewaard">
+        <div class="container">
+            <h2>Bewaard</h2>
+            <aside class="sidebar">
+                <h4>Wanneer je meer woningen opslaat zullen de suggesties ook specifieker worden.</h4>
+                <a href="#" class="button">
+                    <span class="icon-search-white"></span>
+                    <span>Terug naar zoeken</span>
+                </a>
+            </aside>
+            <article id="bewaardResults">
+                {{#each dataDetail}}
+                <div class="result">
+                  <picture>
+                    <img
+                            src="/images/dummy-image.jpg"
+                            data-src="{{#replace "http" "https"}}{{this.HoofdFoto}}{{/replace}}"
+                            class="lazyload"
+                            alt="{{this.Adres}}" />
+                  </picture>
+                    <div class="infoHome">
+                        <h3><a class="title" href="{{this.URL}}">{{this.Adres}}</a></h3>
+                        <p class="address">{{this.Postcode}} {{this.Plaats}}</p>
+                        <strong class="price">{{{this.PrijsGeformatteerd}}}</strong>
+                        <p><span class="area">{{this.WoonOppervlakte}} m&#178;</span> - <span class="rooms">{{this.AantalKamers}} kamers</span></p>
+                    </div>
+                </div>
+                {{/each}}
+            </article>
+        </div>
+    </section>
+</main>
