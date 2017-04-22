@@ -9,8 +9,8 @@ app/config.js
 app/**/config.js
 .env
 public/javascripts/funda.js
-public/javascripts/funda.min.js
-public/stylesheets/style.min.css
+#public/javascripts/funda.min.js
+#public/stylesheets/style.min.css
 
 # Created by https://www.gitignore.io/api/phpstorm
 
