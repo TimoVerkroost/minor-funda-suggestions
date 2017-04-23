@@ -12,7 +12,7 @@ Use the APIs of Funda to get your own ideas and understanding a new way of seeki
 ## Screenshots
 <img src="https://github.com/TimoVerkroost/minor-funda-suggestions/blob/master/repo-images/screenshot-zoeken.png" width="250"> <img src="https://github.com/TimoVerkroost/minor-funda-suggestions/blob/master/repo-images/screenshot-bewaard.png" width="250"> <img src="https://github.com/TimoVerkroost/minor-funda-suggestions/blob/master/repo-images/screenshot-suggesties.png" width="250">
 
-[Live demo](https://funda.timoverkroost.nl/)
+[Live demo](https://funda-suggestions.herokuapp.com/)
 
 ## Size
 * HTML: 5.27 KB GZipped.
